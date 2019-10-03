@@ -1,0 +1,23 @@
+typedef struct s_obj{
+    int x;
+    int y;
+    int direction; // Направление. 0 - 360 вправо
+    int radius; //радиус объекта
+    int review; //радиус обзора
+    int size;//размер объекта
+    int speed; // текущая скорость
+    int max_speed; //максимальная скорость
+    int rotate_speed; // градусов на секунду
+    int clas; // астероид, враг, пуля
+    int type; //тип объекта: враг, астероид, пуля
+    int weapon_type; //тип оружия
+    int health; //шкала здоровья
+    int armor; //броня
+    int damage; //количество урона
+    int award; //награда за уничтожение
+	int present; //проверка на существование на карте
+	int level; //уровень объекта
+	clock_t obj_timer;
+    SDL_Rect *rect; //положение объекта на окне
+}obj;
+
